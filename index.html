@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <title>
+    Tabela de Classificação dos Jogos da Galera
+  </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Tabela de Classificação dos Jogos da Galera</h1>
+
+  <div class="form-wrapper">
+    <input type="text" id="nomeJogador" name="nomeJogador" placeholder="Nome do Jogador">
+    <input type="text" id="imagemJogador" name="imagemJogador" placeholder="Link de Imagem do Jogador">
+    <th><button onclick="adicionarJogadores()" name='botao'>Adicionar Novo Jogador</button></th>
+    <br><br>
+    <h2 class="resultado" id="resultado"></h2>
+    <h2 class="error" id="error"></h2>
+  </div>
+  </div>
+  <br><br>
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan=4>Ações</th>
+        <th><button onclick="zerarTabela()" id="btnZerarTabela">Zerar Tabela</button></th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+      <!--       <tr>
+        <td>Jogador1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr>
+      <tr>
+        <td>Jogador2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr> -->
+    </tbody>
+  </table>
+  <br><br>
+  <th><button onclick="finalizaJogo()">Finalizar Jogo e Exibir Resultados</button></th>
+</body>
+
+</html>
